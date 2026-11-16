@@ -23,74 +23,15 @@ The main objectives are to:
 - Store raw and normalized events for investigation.
 - Visualize OT security activity through Grafana.
 
-## 2. Architecture
+## Architecture
 
-### Data flow
-
-```text
-                 OT LAB NETWORK
-                       |
-                       v
-              +------------------+
-              |      Kali        |
-              | Modbus TCP Client|
-              +------------------+
-                       |
-                       v
-              +------------------+
-              |     Conpot       |
-              | Simulated ICS    |
-              | Modbus TCP       |
-              +------------------+
-                       |
-             Network Traffic
-                       |
-              +--------+--------+
-              |                 |
-              v                 v
-       +-------------+   +-------------+
-       |  Suricata   |   |    Zeek     |
-       | IDS / EVE   |   | Modbus Logs |
-       +-------------+   +-------------+
-              |                 |
-              v                 v
-       +-------------+   +-------------+
-       | EVE Reader  |   | Zeek Reader |
-       +-------------+   +-------------+
-              |                 |
-              +--------+--------+
-                       |
-                       v
-              +------------------+
-              |   FastAPI API    |
-              |   /ot/ingest     |
-              +------------------+
-                       |
-                       v
-              +------------------+
-              | Event Processing |
-              | Normalization    |
-              | Validation       |
-              +------------------+
-                       |
-                       v
-              +------------------+
-              | Correlation and  |
-              | Risk Assessment  |
-              +------------------+
-                       |
-                       v
-              +------------------+
-              |      SQLite      |
-              |   ot_events      |
-              +------------------+
-                       |
-                       v
-              +------------------+
-              |     Grafana      |
-              | Security Dashboard|
-              +------------------+
-```
+<p align="center">
+  <img
+    src="screenshots/alertstack-ot-architecture.png"
+    alt="AlertStack OT Architecture"
+    width="100%"
+  />
+</p>
 
 ### Components
 
