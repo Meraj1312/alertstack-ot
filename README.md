@@ -1,6 +1,25 @@
 # AlertStack OT
 
-### OT/ICS Security Monitoring and Detection Platform
+<p align="center">
+  <img
+    src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1200&color=22D3EE&center=true&vCenter=true&width=900&lines=OT%2FICS+Security+Monitoring;Modbus+TCP+Event+Correlation;Detect+%C2%B7+Correlate+%C2%B7+Investigate"
+    alt="AlertStack OT"
+  />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.x-yellow?style=flat-square&logo=python&logoColor=black" />
+  <img src="https://img.shields.io/badge/FastAPI-API-009688?style=flat-square&logo=fastapi" />
+  <img src="https://img.shields.io/badge/Domain-OT%2FICS-grey?style=flat-square" />
+  <img src="https://img.shields.io/badge/Protocol-Modbus%20TCP-yellow?style=flat-square" />
+  <img src="https://img.shields.io/badge/IDS-Suricata-grey?style=flat-square" />
+  <img src="https://img.shields.io/badge/Network%20Analysis-Zeek-grey?style=flat-square" />
+  <img src="https://img.shields.io/badge/Database-SQLite-003B57?style=flat-square&logo=sqlite" />
+  <img src="https://img.shields.io/badge/Dashboard-Grafana-F46800?style=flat-square&logo=grafana" />
+  <img src="https://img.shields.io/badge/Tests-108%20passed-success?style=flat-square" />
+</p>
+
+## OT/ICS Security Monitoring and Detection Platform
 
 AlertStack OT is a self-hosted OT/ICS security monitoring and detection project designed to collect, normalize, correlate and assess Modbus TCP write activity observed by network security sensors.
 
